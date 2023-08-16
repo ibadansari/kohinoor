@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/900729e07b.js" crossorigin="anonymous"></script>
+    <title> {% block title %}{% endblock title %} | Kohioor Catters</title>
+<style>
+  // :root {
+//   --border-radius: .5rem;
+// }
+
+// * { box-sizing: border-box; }
+
+// html {
+//   display: flex;
+//   height: 100vh;
+//   padding: 1.5rem;
+//   font-size: 14px;
+//   background-color: #eee;
+// }
+
+// body {
+//   align-self: center;
+//   max-width: 380px;
+//   height: 100%;
+//   margin: 0 auto;
+//   font: 1rem/1.5 sans-serif;
+//   background-color: #fff;
+//   background-clip: padding-box;
+//   border: 1px solid rgba(#000, .1);
+//   border-radius: var(--border-radius);
+//   box-shadow: 0 .5rem 1.5rem rgba(#000, .1);
+// }
+
+header {
+  padding: 1rem 1rem .5rem;
+  color: #fff;
+  text-align: center;
+  background-color: #222;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+  a {
+    color: rgba(#fff, .65);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+}
+li {
+  float: left;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  height: 2.5rem;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+    margin-block: 0;
+    overflow-x: auto;
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  a {
+    display: block;
+    padding: .5rem .75rem;
+  }
+
+  .active {
+    color: #fff;
+    font-weight: 600;
+  }
+}
+</style>
+
+
+  </head>
+  <body>
+  {% load static %}
+  <h1 align="center" style="color: voilet;
+  font-family: platino,serif;
+  font-size: 300%;" >KOHINOOR CATTERS <span style="font-family:lucida handwriting; font-size: 15px ;font-style: italic;">by Ibad Ansari</span></h1>
+<!--<nav style="text-align: center;" class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--  <a class="navbar-brand" href="/"></a>-->
+<!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+
+<!--  <div  class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--    <ul style="text-align: center;" class="navbar-nav mr-auto">-->
+<!--      <li class="nav-item active">-->
+<!--        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/nonveg">Main course (Nonveg)</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/veg">Veg</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/starters">Starters</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/desserts">Desserts</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/bevrages">Bevrages</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="/contact">Contact Us</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+
+<!--  </div>-->
+<!--</nav>-->
+<header>
+<!--   <h1>Demo</h1> -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">World</a></li>
+      <li><a href="#">Politics</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Opinion</a></li>
+      <li><a href="#" class="active">Tech</a></li>
+      <li><a href="#">Science</a></li>
+      <li><a href="#">Health</a></li>
+      <li><a href="#">Sports</a></li>
+      <li><a href="#">Arts</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Style</a></li>
+      <li><a href="#">Food</a></li>
+      <li><a href="#">Travel</a></li>
+    </ul>
+  </nav>
+</header>
+
+{% block body %} {% endblock body %}
+  <div class="card text-center">
+  <div class="card-header">
+   K O H I N O O R   &nbsp  C A T T E R S
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Connect us here !</h5>
+    <p class="card-text">Shop No. 4 Kohinoor catters , Infront of masjid Taj Noor Khan , Central library road , Bhopal (462023) </p>
+    <p class="card-text">Call on : 8461999662</p>
+    <div class="social-icons">
+      <a target="_blank" style="text-decoration:none;" href="#"><i class="fa-brands fa-facebook fa-beat" style="color: #030303;"></i> &nbsp</a>
+      <a target="_blank" style="text-decoration:none;"href="https://www.instagram.com/kohinoor_management/"><i class="fa-brands fa-instagram fa-beat" style="color: #030303;"></i> &nbsp</a>
+      <a target="_blank" style="text-decoration:none;"href="mailto:kohinooormanagement@gmail.com subject=subject text"><i class="fa-solid fa-envelope fa-beat" style="color: #030303;"></i> &nbsp</a>
+      <a target="_blank" style="text-decoration:none;" href="https://wa.me/918461999662"><i class="fa-brands fa-whatsapp fa-beat" style="color: #030303;"></i></a>
+
+    </div>
+
+
+
+  </div>
+  <div class="card-footer text-body-secondary">
+    © Copyright . All Rights Reserved <br>
+Designed by diveintoAI
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+let nav = document.querySelectorAll('nav')
+
+if (nav) {
+  let navLinks = document.querySelectorAll('nav a')
+  let activeLink = document.querySelector('.active')
+  activeLink.scrollIntoView({ behavior: "smooth", inline: "center" })
+
+  navLinks.forEach( function(link) {
+    link.addEventListener("click", (event) => {
+      navLinks.forEach( function(link) {
+        link.classList.remove('active')
+      })
+      link.classList.add('active')
+      link.scrollIntoView({ behavior: "smooth", inline: "center" })
+    })
+  })
+}
+</script>
+  </body>
+</html>

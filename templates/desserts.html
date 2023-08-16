@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Dessert{% endblock title %}
+
+{% block body %}
+{% load static %}
+
+<div  class="back-button my-1 mx-2" >
+    <a style="text-decoration :none; color:inherit;" href="/"> &#8592 Go to Back</a>
+</div>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+                <img style="filter:brightness(50%)" src="https://source.unsplash.com/1600x600/?icecream" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Ice Cream</h5>
+            <p>We make your special day more special and rememberable by our services .</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+              <img src="https://source.unsplash.com/1600x600/?halwa" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Halwa</h5>
+            <p>We care about your taste.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img style="filter:brightness(50%)"src="https://source.unsplash.com/1600x600/?dessert" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Our special</h5>
+            <p>try our most chosen desserts.</p>
+        </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</div>
+<br>
+ <h1 class="text-center">Select for Dessert category </h1>
+<div class="row row-cols-1 row-cols-md-3 my-3 mx-5 g-4">
+<a style="text-decoration:none;color:inherit;"  href="/icecream">
+  <div class="col my-4 v">
+    <div class="card h-100">
+      <img src="https://source.unsplash.com/1600x600/?icecream" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ice cream</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+</a>
+<a style="text-decoration:none;color:inherit;"  href="/halwa">
+  <div class="col my-4">
+    <div class="card h-100">
+      <img src="https://source.unsplash.com/1600x600/?halwa" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Halwa</h5>
+        <p class="card-text">lorem ipsum 125}</p>
+      </div>
+    </div>
+  </div>
+</a>
+    <a style="text-decoration:none;color:inherit;"  href="/special">
+     <div class="col my-4">
+    <div class="card h-100">
+      <img src="https://source.unsplash.com/1600x600/?dessert" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Our Specials</h5>
+        <p class="card-text">lorem ipsum 321}</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+
+</div>
+
+
+
+{% endblock body %}
